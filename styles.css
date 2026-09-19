@@ -1,9 +1,41 @@
 body{
     padding: 0;
     margin: 0;
-    display: flex;
-   flex-direction: column;
-    align-items: center;
-    justify-content: center;
    
+}
+header {
+     background-image: url('Assets/main_bg_img.webp');
+     background-size: cover;       /* Scales the image to fill the header */
+    background-position: center;   /* Centers the image */
+    width: 100%;                  /* Spans the full width of the screen */
+    min-height: 400px; 
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background-color: rgba(255, 255, 255, 0.07); /* Very slight white tint */
+    backdrop-filter: blur(8px);                  /* Blurs the busy trees behind it */
+    -webkit-backdrop-filter: blur(8px);          /* Safari support */
+    padding: 15px 30px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-family:'Roboto 400 normal';
+    font-size: 18px;
+}
+ul a{
+    text-decoration: none;
+    color: black;
+}
+.logo img{
+    margin-left:40px;
+    width: 138px;
+    height: 69px;
+    /* Option A: Turns a dark/black logo into a crisp white logo */
+    filter: invert(1); 
+
 }
