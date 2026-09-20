@@ -1,41 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body{
     padding: 0;
     margin: 0;
-   
+    font-family: 'Roboto', sans-serif;
 }
 header {
      background-image: url('Assets/main_bg_img.webp');
      background-size: cover;       /* Scales the image to fill the header */
     background-position: center;   /* Centers the image */
     width: 100%;                  /* Spans the full width of the screen */
-    min-height: 400px; 
+    min-height: 800px; 
 }
 nav{
     display: flex;
     justify-content: space-between;
     padding: 20px 100px;
-    background-color: rgba(255, 255, 255, 0.07); /* Very slight white tint */
-    backdrop-filter: blur(8px);                  /* Blurs the busy trees behind it */
-    -webkit-backdrop-filter: blur(8px);          /* Safari support */
-    padding: 15px 30px;
+   
+  
 }
 
 ul{
     display: flex;
     list-style: none;
+    align-items: center;
     gap: 20px;
     font-family:'Roboto 400 normal';
-    font-size: 18px;
+    text-transform: uppercase;
+    color:#1a1a1a;
+
+
 }
 ul a{
     text-decoration: none;
-    color: black;
+    color:#1a1a1a;
+  
 }
 .logo img{
     margin-left:40px;
     width: 138px;
     height: 69px;
-    /* Option A: Turns a dark/black logo into a crisp white logo */
-    filter: invert(1); 
+   
+}
+ul button{
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    cursor:pointer;
+    font-size: 20px;
+    font-weight: 400;
+    margin:0px;
+    background-color:transparent;
+    border: 1px solid black;
+}
+.header-main{
+    text-align: center;
+    margin-top: 180px;
 
+}
+.header-main h2{
+    font-size: 24px;
+    color:white;
+}
+.header-main h1{
+    font-size: 50px;
+    margin-top: 20px;
+    color:white;
+
+}
+.header-main button{
+   width:203px;
+   height: 50px;
+   border-radius:30px;
+   border: none;
+   font-size: 20px;
+   font-weight: 600;
+   cursor:pointer
+
+}
+
+main{
+    padding: 100px 100px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: light;
 }
