@@ -1,52 +1,101 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adventure landing page (static)</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <img src="Assets\logo_main.webp" alt="Logo" />
-        </div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Offer</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">blog</a></li>
-          <li><a href="#">about us</a></li>
-          <li><a href="#">contact</a></li>
-          <li><button>Sign Up</button></li>
-        </ul>
-      </nav>
-      <div class="header-main">
-        <h2>Adventures</h2>
-        <h1>Let yourself be impressed</h1>
-        <button type="submit" href="#">SIGN UP</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adventure landing page (static)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/all.min.css">
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="Assets\logo_main.webp" alt="Logo" />
       </div>
-    </header>
-    <main>
-      <section class="offer">
-        <div class="text-wrapper">
-          <h2>
-            POWER OF IMPRESSIONS GUARANTEED </br>
-         FEEL EXTREMELY</h2>
-        
-        </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Offer</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">blog</a></li>
+        <li><a href="#">about us</a></li>
+        <li><a href="#">contact</a></li>
+        <li><button>SIGN UP</button></li>
+      </ul>
+    </nav>
+    <div class="header-main">
+      <h2>Adventures</h2>
+      <h1>Let yourself be impressed</h1>
+      <button class="btn" type="submit" href="#">SIGN UP</button>
+    </div>
+  </header>
+  <main>
+    <section class="offer">
+      <div class="text-wrapper">
+        <h2>
+          POWER OF IMPRESSIONS GUARANTEED </br>
+          FEEL EXTREMELY</h2>
         <p>
           Curabitur sit amet purus semper tortor tempor lacinia eu in tortor.
           Integer nisl risus,</br> condimentum sed lacinia in, tincidunt eget mi.
           Praesent finibus mollis blandit.</br> Suspendisse vulputate turpis et erat
           iaculis viverra.
         </p>
-      </section>
-    </main>
-  </body>
+        <span class="text">Curabitur sit amet purus semper <a href="#">Tortor Tempor</a></span>
+      </div>
+
+    </section>
+    <section class="image-gallery">
+      <img src="Assets\img_1.webp" alt="Image 1" />
+      <div class="img-container">
+        <span class="img-description">ROCK CLIMBING</span>
+        <p class="img-text">Curabitur sit amet purus semper tortor tempor </br>lacinia eu in tortor. Integer nisl
+          risus,</br>condimentum sed
+          lacinia in.</p>
+        <button class="btn" type="submit" href="#">SIGN UP</button>
+      </div>
+    </section>
+    <section class="image-gallery">
+      <div class="img-container">
+        <span class="img-description">EXTREME OFFROAD</span>
+        <p class="img-text">Curabitur sit amet purus semper tortor tempor </br>lacinia eu in tortor. Integer nisl
+          risus,</br>condimentum sed
+          lacinia in.</p>
+        <button class="btn" type="submit" href="#">SIGN UP</button>
+      </div>
+      <img src="Assets\offroad.webp" alt="Image 1" />
+    </section>
+    <section class="gallery">
+      <h1>GALLERY</h1>
+      <div class="outer-layout">
+        <img class="outer-large-img" src="Assets\gallery_1.webp" alt="Image 1" />
+        <div class="inner-layout">
+          <img src="Assets\gallery_2.webp" alt="Image 2" />
+          <div class="last-layout">
+            <img src="Assets\gallery_3.webp" alt="Image 3" />
+            <img src="Assets\gallery_4.webp" alt="Image 4" />
+          </div>
+        </div>
+      </div>
+      <div class="gallery-bottom-text">
+        <p class="gallery-suggestion-text">Do you have questions ? Suggestions ? Write to us</p>
+        <button class="btn" type="submit">Contact</button>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+    <h4>Check us out:</h4>
+    <div class="social-container">
+      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </div>
+   <p>A website created by Suraj Singh.</p>
+  </footer>
+</body>
+
 </html>
