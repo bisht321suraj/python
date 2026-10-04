@@ -11,37 +11,40 @@
 </head>
 
 <body>
-  <header>
-    <nav>
+  <header id="home">
+    <nav aria-label="Main Navigation">
       <div class="logo">
-        <img src="Assets\logo_main.webp" alt="Logo" />
+       <a href="#"><img src="Assets/logo_main.webp" alt="Adventure Logo" /></a> 
       </div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Offer</a></li>
-        <li><a href="#">Gallery</a></li>
+      <button id="menu-toggle" aria-label="Toggle navigation menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#offer">Offer</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#">blog</a></li>
         <li><a href="#">about us</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="#footer">contact</a></li>
         <li><button>SIGN UP</button></li>
       </ul>
     </nav>
     <div class="header-main">
       <h2>Adventures</h2>
       <h1>Let yourself be impressed</h1>
-      <button class="btn" type="submit" href="#">SIGN UP</button>
+      <button class="btn" type="submit">SIGN UP</button>
     </div>
   </header>
   <main>
-    <section class="offer">
+    <section id="offer">
       <div class="text-wrapper">
         <h2>
-          POWER OF IMPRESSIONS GUARANTEED </br>
+          POWER OF IMPRESSIONS GUARANTEED <br>
           FEEL EXTREMELY</h2>
         <p>
           Curabitur sit amet purus semper tortor tempor lacinia eu in tortor.
-          Integer nisl risus,</br> condimentum sed lacinia in, tincidunt eget mi.
-          Praesent finibus mollis blandit.</br> Suspendisse vulputate turpis et erat
+          Integer nisl risus,<br> condimentum sed lacinia in, tincidunt eget mi.
+          Praesent finibus mollis blandit.<br> Suspendisse vulputate turpis et erat
           iaculis viverra.
         </p>
         <span class="text">Curabitur sit amet purus semper <a href="#">Tortor Tempor</a></span>
@@ -49,11 +52,11 @@
 
     </section>
     <section class="image-gallery">
-      <img src="Assets\img_1.webp" alt="Image 1" />
+      <img src="Assets\img_1.webp" alt="A person climbing a rock" />
       <div class="img-container">
         <span class="img-description">ROCK CLIMBING</span>
-        <p class="img-text">Curabitur sit amet purus semper tortor tempor </br>lacinia eu in tortor. Integer nisl
-          risus,</br>condimentum sed
+        <p class="img-text">Curabitur sit amet purus semper tortor tempor <br>lacinia eu in tortor. Integer nisl
+          risus,<br>condimentum sed
           lacinia in.</p>
         <button class="btn" type="submit" href="#">SIGN UP</button>
       </div>
@@ -61,22 +64,22 @@
     <section class="image-gallery">
       <div class="img-container">
         <span class="img-description">EXTREME OFFROAD</span>
-        <p class="img-text">Curabitur sit amet purus semper tortor tempor </br>lacinia eu in tortor. Integer nisl
-          risus,</br>condimentum sed
+        <p class="img-text">Curabitur sit amet purus semper tortor tempor <br>lacinia eu in tortor. Integer nisl
+          risus,<br>condimentum sed
           lacinia in.</p>
-        <button class="btn" type="submit" href="#">SIGN UP</button>
+        <button class="btn" type="submit">SIGN UP</button>
       </div>
-      <img src="Assets\offroad.webp" alt="Image 1" />
+      <img src="Assets/offroad.webp" alt="An old jeep on the trail" />
     </section>
     <section class="gallery">
-      <h1>GALLERY</h1>
+      <h2>GALLERY</h2>
       <div class="outer-layout">
-        <img class="outer-large-img" src="Assets\Gallery_1.webp" alt="Image 1" />
+        <img class="outer-large-img" src="Assets/Gallery_1.webp" alt="A person with a backpack admiring the view " loading="lazy" />
         <div class="inner-layout">
-          <img src="Assets\Gallery_2.webp" alt="Image 2" />
+          <img src="Assets/Gallery_2.webp" class="inner-small-img" alt="An old jeep on the trail" loading="lazy" />
           <div class="last-layout">
-            <img src="Assets\Gallery_3.webp" alt="Image 3" />
-            <img src="Assets\Gallery_4.webp" alt="Image 4" />
+            <img src="Assets/Gallery_3.webp" alt="A mountain landscape" loading="lazy" />
+            <img src="Assets/Gallery_4.webp" alt="A person hiking in the mountains" loading="lazy" />
           </div>
         </div>
       </div>
@@ -87,12 +90,12 @@
 
     </section>
   </main>
-  <footer>
+  <footer id="footer">
     <h4>Check us out:</h4>
     <div class="social-container">
-      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon"  aria-label="Visit us on Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="social-icon" aria-label="Visit us on YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" class="social-icon" aria-label="Visit us on Instagram"><i class="fab fa-instagram"></i></a>
     </div>
    <p>A website created by Suraj Singh</p>
   </footer>

@@ -5,67 +5,105 @@
 *::before {
   box-sizing: border-box;
 }
+
 body {
   padding: 0;
   margin: 0;
 }
+
 header {
   background-image: url("Assets/main_bg_img.webp");
-  background-size: cover; /* Scales the image to fill the header */
-  background-position: center; /* Centers the image */
-  width: 100%; /* Spans the full width of the screen */
+  background-size: cover;
+  /* Scales the image to fill the header */
+  background-position: center;
+  /* Centers the image */
+  width: 100%;
+  /* Spans the full width of the screen */
   min-height: 800px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 100px;
+  padding-top: 20px;
 }
 
-ul {
+
+#menu-toggle {
+  display: none;
+}
+
+.menu {
   display: flex;
   list-style: none;
   align-items: center;
   font-family: "Roboto 700 normal";
   text-transform: uppercase;
+
 }
-ul li {
+
+@media(max-width:900px) {
+  nav {
+    padding: 0px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  #menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+.menu li {
   padding: 0px 10px;
   font-size: 18px;
+
 }
-ul a {
+
+.menu a {
   text-decoration: none;
   color: #1a1a1a;
+  white-space: nowrap;
 }
-ul a:hover {
+
+.menu a:hover {
   background-color: aliceblue;
   outline: 5px solid aliceblue;
 }
+
 .logo img {
   margin-left: 40px;
   width: 138px;
   height: 69px;
 }
-ul button {
-  width: 180px;
-  height: 40px;
-  border-radius: 30px;
-  border: none;
+
+.menu button {
+  border-radius: 20px;
+  padding: 5px 20px;
+  border: 1px solid black;
   cursor: pointer;
-  font-size: 20px;
-  font-weight: 400;
   margin: 0px;
+  white-space: nowrap;
   background-color: transparent;
   border: 1px solid black;
 }
-ul button:hover {
+
+.menu button:hover {
   background-color: #333333;
   color: white;
 }
+
 .header-main {
   text-align: center;
   margin-top: 180px;
 }
+
 .header-main h2 {
   font-size: 24px;
   font-style: italic;
@@ -73,6 +111,7 @@ ul button:hover {
   font-family: "Lora 400 normal";
   line-height: 28px;
 }
+
 .header-main h1 {
   font-size: 56px;
   margin-top: 20px;
@@ -81,6 +120,7 @@ ul button:hover {
   font-family: "Roboto Condensed", sans-serif;
   line-height: 66px;
 }
+
 .btn {
   width: 203px;
   height: 50px;
@@ -97,6 +137,7 @@ main {
   text-align: center;
   font-size: 28px;
 }
+
 .text-wrapper h2 {
   font-family: "Lora 400 normal";
   font-size: 34px;
@@ -104,6 +145,7 @@ main {
   line-height: 40px;
   font-weight: 400;
 }
+
 .text-wrapper p {
   font-family: "Lora 400 normal";
   font-size: 17px;
@@ -115,13 +157,16 @@ main {
   font-size: 15px;
   color: #333333;
 }
+
 .text a {
   text-decoration: none;
   color: #79a690;
 }
+
 .text a:hover {
   text-decoration: underline;
 }
+
 .image-gallery {
   margin-top: 80px;
   display: flex;
@@ -132,17 +177,24 @@ main {
 
 }
 
+
+.image-gallery img {
+  max-width: 100%
+}
+
 .img-description {
   font-size: 16px;
   font-weight: 600;
   font-family: "Roboto Condensed", sans-serif;
   color: #79a690;
 }
+
 .img-text {
   font-size: 21px;
   color: rgb(51, 51, 51);
   line-height: 31px;
 }
+
 .image-gallery .btn {
   background-color: #79a690;
   color: white;
@@ -154,15 +206,18 @@ main {
   align-items: center;
   padding: 40px;
 }
+
+
 .outer-layout {
   display: flex;
   justify-content: center;
- gap: 30px;
+  gap: 30px;
   margin-top: 20px;
 }
-.outer-large-img{
-  max-width: 500px;
-  height: content;
+
+.outer-large-img {
+  max-width: 50%;
+
 }
 
 .inner-layout {
@@ -171,69 +226,115 @@ main {
   justify-content: center;
   align-items: start;
   gap: 10px;
- 
- 
 
-  
-}
-.last-layout{
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-   
-    
-}
-.last-layout img{
-    max-width: 330px;
-    height: content;
 }
 
-.gallery-bottom-text{
+.last-layout {
+  display: flex;
+  justify-content: space-between;
+  gap:10px
+}
+
+.last-layout img {
+  max-width: 50%;
+  height: auto;
+}
+
+.gallery-bottom-text {
 
   display: flex;
   gap: 40px;
   align-items: center;
   margin-top: 20px;
   padding: 10px;
-  
+
 }
-.gallery-suggestion-text{
-font-size: 26px;
+
+.gallery-suggestion-text {
+  font-size: 26px;
 }
-.gallery-bottom-text .btn{
-   background-color: #79a690;
+
+.gallery-bottom-text .btn {
+  background-color: #79a690;
   color: white;
 }
-.btn:hover{
+
+.btn:hover {
   background-color: #055913;
 }
 
-footer{
+#footer {
   background-color: #4e5e66;
   padding: 40px;
   text-align: center;
 }
-footer h4{
-    color: white;
+
+#footer h4 {
+  color: white;
 }
-.social-container{
+
+#footer .social-container {
   display: flex;
   justify-content: center;
-  gap:20px;
+  gap: 20px;
   align-items: center;
   padding: 20px;
-  
+
 }
-.social-icon{
+
+.social-icon {
   border: 1px solid #b3b3b380;
   border-radius: 100px;
   background: none;
   box-shadow: none;
-  color:white;
+  color: white;
   padding: 10px;
   font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
+}
+
+@media(max-width:727px) {
+  .image-gallery {
+    flex-direction: column;
+  }
+
+  .image-gallery img {
+    order: 1
+  }
+
+  .img-container {
+    order: 2;
+  }
+
+  .outer-layout {
+    flex-direction: column;
+  }
+
+  .outer-large-img {
+    display: none;
+  }
+
+  .inner-small-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .inner-layout {
+    width: 100%;
+  }
+
+  .last-layout {
+    flex-direction: column;
+  } 
+
+  .last-layout img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+
+  }
+
 }
