@@ -14,7 +14,6 @@ body {
 header {
   background-image: url("Assets/main_bg_img.webp");
   background-size: cover;
-  /* Scales the image to fill the header */
   background-position: center;
   /* Centers the image */
   width: 100%;
@@ -44,7 +43,7 @@ nav {
 
 @media(max-width:900px) {
   nav {
-    padding: 0px;
+    padding: 40px;
   }
 
   .menu {
@@ -78,9 +77,9 @@ nav {
 }
 
 .logo img {
-  margin-left: 40px;
+  padding-left: 40px;
   width: 138px;
-  height: 69px;
+  height: auto;
 }
 
 .menu button {
@@ -203,8 +202,13 @@ main {
 .gallery {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 40px;
+}
+.container {
+  width: min(100% - 32px, 1200px);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -217,22 +221,26 @@ main {
 
 .outer-large-img {
   max-width: 50%;
-
+  
 }
 
 .inner-layout {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
   gap: 10px;
 
+}
+.inner-small-img {
+  width: 100%;
+  height: auto;
 }
 
 .last-layout {
   display: flex;
   justify-content: space-between;
-  gap:10px
+  gap:10px;
+
 }
 
 .last-layout img {
@@ -296,7 +304,7 @@ main {
   text-decoration: none;
 }
 
-@media(max-width:727px) {
+@media(max-width:900px) {
   .image-gallery {
     flex-direction: column;
   }
@@ -317,23 +325,19 @@ main {
     display: none;
   }
 
-  .inner-small-img {
+.inner-small-img {
     max-width: 100%;
     height: auto;
   }
-
-  .inner-layout {
-    width: 100%;
-  }
-
   .last-layout {
     flex-direction: column;
   } 
 
   .last-layout img {
-    max-width: 100%;
-    width: 100%;
+   max-width: 100%;
     height: auto;
+
+    
 
   }
 
